@@ -21,7 +21,7 @@ const app = express();
 app.use(express.json());
 
 // Mahsulotlar marshrutlari
-app.use("/api", productRoutes);
+app.use("/api/v1", productRoutes);
 
 // 404 Not Found handler
 app.use((req, res, next) => {
